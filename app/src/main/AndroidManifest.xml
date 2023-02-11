@@ -12,6 +12,9 @@
         android:theme="@style/Theme.AppCorporativa"
         tools:targetApi="31">
         <activity
+            android:name=".ModificarPersonajeController"
+            android:exported="false" />
+        <activity
             android:name=".MuestraPersonaje"
             android:exported="false" />
         <activity

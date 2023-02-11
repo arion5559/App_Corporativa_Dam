@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">App Corporativa</string>
+    <string name="vitalidad">Vitalidad</string>
+    <string name="aprendizaje">Aprendizaje</string>
+    <string name="resistencia">Resistencia</string>
+    <string name="fuerza">Fuerza</string>
+    <string name="destreza">Destreza</string>
+    <string name="inteligencia">Inteligencia</string>
+    <string name="fe">Fe</string>
+    <string name="suerte">Suerte</string>
+    <string name="imagen_del_personaje">Imagen del personaje</string>
 </resources>
