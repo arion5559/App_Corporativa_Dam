@@ -7,7 +7,7 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="dark_souls_character_gestor"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCorporativa"
         tools:targetApi="31">
@@ -22,6 +22,9 @@
             android:exported="false" />
         <activity
             android:name=".LogInController"
+            android:exported="true">
+        </activity>
+        <activity android:name=".StartController"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

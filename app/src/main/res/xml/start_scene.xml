@@ -6,10 +6,10 @@
     <Transition
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="3000">
+        motion:duration="3000"
+        motion:autoTransition="animateToEnd">
        <KeyFrameSet>
        </KeyFrameSet>
-        <OnSwipe motion:maxVelocity="1.00" />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
