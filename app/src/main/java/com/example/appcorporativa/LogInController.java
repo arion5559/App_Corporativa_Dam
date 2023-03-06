@@ -11,4 +11,8 @@ public class LogInController extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
     }
+
+    public void logIn() {
+
+    }
 }
