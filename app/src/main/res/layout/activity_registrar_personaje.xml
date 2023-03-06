@@ -89,16 +89,40 @@
 
     <EditText
         android:id="@+id/input_character_description"
-        android:layout_width="332dp"
-        android:layout_height="541dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="48dp"
+        android:layout_width="355dp"
+        android:layout_height="399dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
         android:ems="10"
-        android:inputType="number"
+        android:inputType="textMultiLine"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.977"
-        app:layout_constraintStart_toEndOf="@+id/txt_character_souls"
-        app:layout_constraintTop_toBottomOf="@+id/input_character_souls" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_character_description" />
+
+    <Button
+        android:id="@+id/btn_save_character"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/black"
+        android:text="Guardar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_character_description" />
+
+    <Button
+        android:id="@+id/btn_cancel_character"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/black"
+        android:text="Cancelar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/btn_save_character"
+        app:layout_constraintTop_toBottomOf="@+id/input_character_description" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
