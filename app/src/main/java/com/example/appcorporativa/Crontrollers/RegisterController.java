@@ -1,14 +1,16 @@
-package com.example.appcorporativa;
+package com.example.appcorporativa.Crontrollers;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MuestraPersonaje extends AppCompatActivity {
+import com.example.appcorporativa.R;
+
+public class RegisterController extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_muestra_personaje);
+        setContentView(R.layout.activity_registro);
     }
 }

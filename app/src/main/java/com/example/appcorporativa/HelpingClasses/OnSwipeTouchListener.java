@@ -1,8 +1,10 @@
-package com.example.appcorporativa;
+package com.example.appcorporativa.HelpingClasses;
 
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
+
+import com.example.appcorporativa.Crontrollers.StartController;
 
 public class OnSwipeTouchListener implements View.OnTouchListener {
     private final GestureDetector gestureDetector;
