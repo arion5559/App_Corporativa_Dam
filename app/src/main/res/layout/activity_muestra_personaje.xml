@@ -58,6 +58,7 @@
         android:layout_marginTop="32dp"
         android:background="@android:color/holo_orange_light"
         android:text="NombrePersonaje"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
 
@@ -80,6 +81,7 @@
         android:layout_marginTop="20dp"
         android:background="@android:color/holo_orange_light"
         android:text="SoulQuantity"
+        android:textColor="@color/white"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toBottomOf="@+id/NombrePersonaje" />
 
@@ -95,14 +97,43 @@
         app:layout_constraintTop_toBottomOf="@+id/character_image" />
 
     <TextView
-        android:id="@+id/textView8"
-        android:layout_width="332dp"
-        android:layout_height="342dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:id="@+id/character_description"
+        android:layout_width="345dp"
+        android:layout_height="290dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
         android:background="@android:color/holo_orange_light"
-        android:text="Description"
+        android:ems="10"
+        android:textColor="#FFFFFF"
+        android:text="Descripción del personaje"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/btn_modify_character"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/black"
+        android:text="Modificar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/character_description" />
+
+    <Button
+        android:id="@+id/btn_cancel_character"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/black"
+        android:text="Cancelar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/btn_modify_character"
+        app:layout_constraintTop_toBottomOf="@+id/character_description" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -61,5 +63,14 @@ public class RegisterController extends AppCompatActivity {
             Intent intent = new Intent(this, LogInController.class);
             startActivity(intent);
         });
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_principal, menu);
+        menu.findItem(R.id.itemLista).setVisible(false);
+        menu.findItem(R.id.optCV).setVisible(false);
+        menu.findItem(R.id.optLogOut).setVisible(false);
+        return true;
     }
 }

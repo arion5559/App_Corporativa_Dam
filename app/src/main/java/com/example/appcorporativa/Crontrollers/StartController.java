@@ -3,6 +3,8 @@ package com.example.appcorporativa.Crontrollers;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -34,5 +36,14 @@ public class StartController extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_principal, menu);
+        menu.findItem(R.id.itemLista).setVisible(false);
+        menu.findItem(R.id.optCV).setVisible(false);
+        menu.findItem(R.id.optLogOut).setVisible(false);
+        return true;
     }
 }

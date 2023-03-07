@@ -8,7 +8,7 @@ import android.widget.Toast;
 import com.example.appcorporativa.Modelo.Usuario;
 
 public class DbUsuarios extends DbHelper {
-    Context context;
+    private Context context;
 
     public DbUsuarios(Context context) {
         super(context, "Usuarios");

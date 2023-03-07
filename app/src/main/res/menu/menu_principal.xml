@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemLista"
+        android:title="ListaPersonajes" />
+    <item
+        android:id="@+id/optCV"
+        android:title="CV" />
+    <item
+         android:id="@+id/optLogOut"
+        android:title="LogOut" />
+
+</menu>

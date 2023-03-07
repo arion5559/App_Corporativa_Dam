@@ -14,25 +14,67 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="dark_souls_character_gestor"
+        android:label="Gestor de personajes de dark souls"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCorporativa"
         tools:targetApi="31">
         <activity
+            android:name=".Crontrollers.CurriculumController"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Crontrollers.ListaPersonajesController"
+            android:exported="false"
+            android:parentActivityName=".Crontrollers.ListaPersonajesController">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Crontrollers.ListaPersonajesController" />
+        </activity>
+        <activity
             android:name=".Crontrollers.RegistrarPersonajeController"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Crontrollers.ListaPersonajesController">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Crontrollers.ListaPersonajesController" />
+        </activity>
         <activity
             android:name=".Crontrollers.ModificarPersonajeController"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Crontrollers.ListaPersonajesController">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Crontrollers.ListaPersonajesController" />
+        </activity>
         <activity
             android:name=".Crontrollers.MuestraPersonaje"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".Crontrollers.ListaPersonajesController">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Crontrollers.ListaPersonajesController" />
+        </activity>
         <activity
             android:name=".Crontrollers.RegisterController"
             android:exported="false" />
         <activity
             android:name=".Crontrollers.LogInController"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Crontrollers.StartController"
             android:exported="true">

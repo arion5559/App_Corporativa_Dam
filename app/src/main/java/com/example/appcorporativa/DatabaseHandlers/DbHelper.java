@@ -26,7 +26,8 @@ public class DbHelper extends SQLiteOpenHelper {
         if (TABLE_NAME.equals("Usuarios")) {
             sqLiteDatabase.execSQL("CREATE TABLE Usuarios (id INTEGER PRIMARY KEY AUTOINCREMENT, nombre TEXT NOT NULL, username TEXT NOT NULL, email TEXT, password TEXT NOT NULL)");
         } else if (TABLE_NAME.equals("Personajes")) {
-            sqLiteDatabase.execSQL("CREATE TABLE Personajes (id INTEGER PRIMARY KEY AUTOINCREMENT, nombre TEXT NOT NULL, descripcion TEXT, imagen TEXT, almas INTEGER)");
+            sqLiteDatabase.execSQL("CREATE TABLE Personajes (id INTEGER PRIMARY KEY AUTOINCREMENT, nombre TEXT NOT NULL, descripcion TEXT NOT NULL, " +
+                    "imagen TEXT NOT NULL, id_usuario INTEGER NOT NULL, FOREIGN KEY (id_usuario) REFERENCES Usuarios(id))");
         }
     }
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {

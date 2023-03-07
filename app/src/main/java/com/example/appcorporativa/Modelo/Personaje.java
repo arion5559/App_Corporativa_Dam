@@ -6,13 +6,23 @@ public class Personaje {
     private String descripcion;
     private String imagen;
     private long almas;
+    private int idUsuario;
 
-    public Personaje(int id, String nombre, String descripcion, String imagen, long almas) {
+    public Personaje(int id, String nombre, String descripcion, String imagen, long almas, int idUsuario) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.imagen = imagen;
         this.almas = almas;
+        this.idUsuario = idUsuario;
+    }
+
+    public Personaje(String nombre, String descripcion, String imagen, long almas, int idUsuario) {
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.imagen = imagen;
+        this.almas = almas;
+        this.idUsuario = idUsuario;
     }
 
     public int getId() {
@@ -53,6 +63,14 @@ public class Personaje {
 
     public void setAlmas(long almas) {
         this.almas = almas;
+    }
+
+    public int getIdUsuario() {
+        return idUsuario;
+    }
+
+    public void setIdUsuario(int idUsuario) {
+        this.idUsuario = idUsuario;
     }
 
     @Override
