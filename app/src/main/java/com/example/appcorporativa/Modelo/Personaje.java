@@ -25,6 +25,15 @@ public class Personaje {
         this.idUsuario = idUsuario;
     }
 
+    public Personaje() {
+    }
+
+    public Personaje(String nombre, String imagen, long almas) {
+        this.nombre = nombre;
+        this.imagen = imagen;
+        this.almas = almas;
+    }
+
     public int getId() {
         return id;
     }
